@@ -4,6 +4,7 @@ pragma solidity ^0.8.9;
 //import "hardhat/console.sol";
 
 contract Assessment {
+
     address payable public owner;
     uint256 public balance;
 
@@ -20,6 +21,7 @@ contract Assessment {
     }
 
     function deposit(uint256 _amount) public payable {
+        
         uint _previousBalance = balance;
 
         // make sure this is the owner
